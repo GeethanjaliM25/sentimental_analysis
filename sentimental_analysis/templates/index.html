@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            margin: 20px;
+        }
+        textarea {
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Sentiment Analysis</h1>
+    <form method="POST">
+        <textarea name="text" placeholder="Type your text here..."></textarea><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if sentiment %}
+        <div class="result">Result: {{ sentiment }}</div>
+    {% endif %}
+</body>
+</html>
