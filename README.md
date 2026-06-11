@@ -4,7 +4,7 @@ Sentiment Analysis is the process of using AI to detect whether text expresses P
 
 Built a simple web app to analyze text sentiments in real-time..
 
-Tech Used:
+Tech Used: 
 
 Python
 
